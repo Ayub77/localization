@@ -6,7 +6,7 @@ import 'package:modul6_dars2_qayta/pages/homepage.dart';
 void main() {
   runApp(
     EasyLocalization(
-      supportedLocales: [Locale('en', 'US'), Locale('ru', 'RU'), Locale('uz', 'UZ'), Locale('fr', 'FR')],
+      supportedLocales: [Locale('en', 'US'), Locale('ko', 'KO'), Locale('ja', 'JP')],
       path: 'assets/translations', // <-- change patch to your
       fallbackLocale: Locale('en', 'US'),
       child: MyApp()

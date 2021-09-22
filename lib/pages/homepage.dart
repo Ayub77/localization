@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            Center(child: Text('welcome',style: TextStyle(fontSize: 30),).tr()),
+            Center(child: Text('Flutter',style: TextStyle(fontSize: 30),).tr()),
             SizedBox(height: 250,),
             Row(
               children: [
@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
 
                         context.locale = Locale('en', 'US');
 
-                    },child: Text("english",style: TextStyle(color: Colors.white,fontSize: 25),)
+                    },child: Text("English",style: TextStyle(color: Colors.white,fontSize: 25),)
                      ),
                   )
                    ),
@@ -46,9 +46,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                     child: FlatButton(onPressed: (){
                         
-                        context.locale = Locale('ru', 'RU');
+                        context.locale = Locale('ko', 'KO');
                     },
-                     child: Text("russian",style: TextStyle(color: Colors.white,fontSize: 25),)
+                     child: Text("Korean",style: TextStyle(color: Colors.white,fontSize: 25),)
                      ),
                   )
                    ),
@@ -61,24 +61,12 @@ class _HomePageState extends State<HomePage> {
                       ),
                       child: FlatButton(onPressed: (){
 
-                         context.locale = Locale('uz', 'UZ');
-                      }, child: Text("uzbek",style: TextStyle(color: Colors.white,fontSize: 25),)
+                         context.locale = Locale('ja', 'JP');
+                      }, child: Text("Japanese",style: TextStyle(color: Colors.white,fontSize: 25),)
                       ),
                   )
                   ),
-                  SizedBox(width: 10,),
-                  Expanded(child: Container(
-                     height: 60,
-                      decoration: BoxDecoration(
-                        color: Colors.yellow[700],
-                        borderRadius: BorderRadius.circular(30)
-                      ),
-                      child: FlatButton(onPressed: (){
-
-                         context.locale = Locale('fr', 'FR');
-                      }, child: Text("french",style: TextStyle(color: Colors.white,fontSize: 25),)
-                      ),
-                  ))
+                  
               ],
             )            
 
